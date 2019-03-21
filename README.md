@@ -106,3 +106,9 @@ $ cd graphexp
 $ python -m SimpleHTTPServer 1337
 ```
 Navigating into ```http://0.0.0.0:1337``` will great you with the GraphExp interface.
+
+## Ressources:
+
+[Getting started with JanusGraph, IBM](https://developer.ibm.com/dwblog/2018/whats-janus-graph-learning-deployment/)
+[TinkerPop documentation](http://tinkerpop.apache.org/docs/current/reference/)
+[JanusGraph documentation](https://docs.janusgraph.org/latest/)
