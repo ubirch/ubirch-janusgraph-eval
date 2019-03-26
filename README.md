@@ -61,7 +61,7 @@ docker run --name es -d -p 9200:9200 -p 9300:9300 elasticsearch:5.6
 ```
 To verify that ElasticSearch was correctly launched, verify that the following command  ``` curl localhost:9200 ```
 returns the following string
-```
+<!--```
 {
   "name" : "9XjBwtd",
   "cluster_name" : "elasticsearch",
@@ -75,7 +75,8 @@ returns the following string
   },
   "tagline" : "You Know, for Search"
 }
-```
+```-->
+![Flowchart](./img/graph.png)
 If the docker container fails on startup, verify that you've allocated enough memory, as described [here](https://github.com/10up/wp-local-docker/issues/6)
 
 ### Load the graph example in the database
