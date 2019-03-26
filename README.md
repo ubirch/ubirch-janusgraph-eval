@@ -10,6 +10,7 @@ This visualisation must be automatic and rendered on a webpage. Using tools such
 
 The following diagram represent the interactions between the different layers of this project
 
+
 ![Flowchart](./img/graph.png)
 ### Cassandra
 
