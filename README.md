@@ -10,16 +10,7 @@ This visualisation must be automatic and rendered on a webpage. Using tools such
 
 The following diagram represent the interactions between the different layers of this project
 
-```mermaid
-graph LR
-A[Docker Cassandra]
-J[Janus DB] --> A
-J --> E[Docker ElasticSearch]
-Gs[TinkerPop Gremlin Server] --> J
-Gi[Tinkerpop Gremlin Instance] --> Gs
-Ge[GraphExp] --> Gi
-```
-
+![Flowchart](./img/graph.png)
 ### Cassandra
 
 [Cassandra](http://cassandra.apache.org/) is an open source, distributed NoSQL database that natively integrates with JanusGraph, serving as a data storage backend
@@ -61,7 +52,7 @@ docker run --name es -d -p 9200:9200 -p 9300:9300 elasticsearch:5.6
 ```
 To verify that ElasticSearch was correctly launched, verify that the following command  ``` curl localhost:9200 ```
 returns the following string
-<!--```
+```
 {
   "name" : "9XjBwtd",
   "cluster_name" : "elasticsearch",
@@ -75,8 +66,8 @@ returns the following string
   },
   "tagline" : "You Know, for Search"
 }
-```-->
-![Flowchart](./img/graph.png)
+```
+
 If the docker container fails on startup, verify that you've allocated enough memory, as described [here](https://github.com/10up/wp-local-docker/issues/6)
 
 ### Load the graph example in the database
