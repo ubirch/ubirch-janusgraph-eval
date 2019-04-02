@@ -1,0 +1,94 @@
+// 20190327122442
+// http://0.0.0.0:8080/api-docs/swagger.json
+
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "The Ubirch API",
+    "version": "1.0.0",
+    "description": "Docs for the Ubirch REST API",
+    "termsOfService": "http://ubirch.de",
+    "contact": {
+      "name": "benoit.george@ubirch.com"
+    },
+    "license": {
+      "name": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  },
+  "schemes": ["http"],
+  "paths": {
+    "/flowers/": {
+      "get": {
+        "operationId": "getFlowers",
+        "summary": "Show all flowers",
+        "description": "Shows all the flowers in the flower shop. You can search it too.",
+        "deprecated": false,
+        "parameters": [
+          {
+            "name": "name",
+            "description": "A name to search for",
+            "required": false,
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Flower"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/flowers/{slug}": {
+      "get": {
+        "operationId": "findBySlug",
+        "summary": "Find by slug",
+        "deprecated": false,
+        "parameters": [
+          {
+            "name": "slug",
+            "description": "Slug of flower that needs to be fetched",
+            "required": true,
+            "in": "path",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Flower"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Flower": {
+      "type": "object",
+      "properties": {
+        "slug": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "slug",
+        "name"
+      ]
+    }
+  },
+  "securityDefinitions": {
+
+  }
+}
