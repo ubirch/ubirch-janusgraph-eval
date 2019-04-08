@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: io.vavr:vavr:0.9.0:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/io.vavr/vavr/jars/vavr-0.9.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/io.vavr/vavr/srcs/vavr-0.9.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

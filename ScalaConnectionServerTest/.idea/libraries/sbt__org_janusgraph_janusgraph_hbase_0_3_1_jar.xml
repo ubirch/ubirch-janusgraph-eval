@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: org.janusgraph:janusgraph-hbase:0.3.1:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.janusgraph/janusgraph-hbase/jars/janusgraph-hbase-0.3.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.janusgraph/janusgraph-hbase/srcs/janusgraph-hbase-0.3.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

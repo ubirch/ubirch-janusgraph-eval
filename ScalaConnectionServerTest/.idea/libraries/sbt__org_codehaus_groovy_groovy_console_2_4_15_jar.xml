@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: org.codehaus.groovy:groovy-console:2.4.15:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.codehaus.groovy/groovy-console/jars/groovy-console-2.4.15.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.codehaus.groovy/groovy-console/srcs/groovy-console-2.4.15-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
